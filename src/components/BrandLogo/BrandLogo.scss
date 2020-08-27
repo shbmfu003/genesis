@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+
+// FIXME: These colors suck!
+a.navbar-brand {
+	font-family: "Fredericka the Great", cursive;
+	font-size: 1.43em;
+	text-transform: uppercase;
+	text-decoration: unset;
+	color: #333333;
+	letter-spacing: 3px;
+
+	span {
+		margin-right: 2px;
+
+		&:first-child {
+			color: #424244;
+		}
+		&:nth-child(2) {
+			color: rgb(199, 110, 78);
+		}
+		&:last-child {
+			color: rgb(42, 105, 163);
+			margin-right: 0;
+		}
+	}
+}

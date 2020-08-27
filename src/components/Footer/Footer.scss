@@ -1,0 +1,23 @@
+@import "../../scss/style";
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+footer.main-footer {
+	position: sticky;
+	top: 100%;
+	left: 0;
+	background-color: $bg-accent-color;
+	padding: 1em 0.25em 0.5em;
+	color: rgba(#ffffff, $navbar-link-opacity);
+
+	// TODO: make a responsive bottom footer component
+	section.bottom-footer {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		> * {
+			flex: 1;
+		}
+	}
+}

@@ -1,0 +1,63 @@
+@import "../../scss/style";
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.navbar {
+	z-index: inherit;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: $navbar-min-height;
+
+	&.scroll {
+		background-color: $bg-accent-color;
+	}
+
+	&-collapse {
+		width: $navbar-collapse-width;
+		list-style-type: none;
+		display: flex;
+		justify-content: center;
+
+		> li {
+			margin-right: $nav-li-margin-right;
+			text-align: center;
+			border: $nav-li-border;
+			flex: 1;
+			border-radius: $border-radius;
+
+			> a {
+				position: relative;
+				border-radius: 2px;
+				font-size: 1em;
+				font-weight: $nav-link-font-weight;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: $navbar-link-height;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: $letter-spacing;
+				opacity: $navbar-link-opacity;
+				white-space: nowrap;
+				cursor: pointer;
+			}
+
+			&:first-child {
+				@include a-hover-after($nav-1st-li-bd-color, 1px);
+			}
+
+			&:nth-child(2) {
+				@include a-hover-after($nav-2nd-li-bd-color, 1px);
+			}
+
+			&:nth-child(3) {
+				@include a-hover-after($nav-3rd-li-bd-color, 1px);
+			}
+
+			&:nth-child(4) {
+				@include a-hover-after($nav-4th-li-bd-color, 1px);
+			}
+		}
+	}
+}

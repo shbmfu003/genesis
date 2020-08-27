@@ -1,0 +1,20 @@
+[
+	{
+		"name": "Facebook",
+		"code": "facebook-f",
+		"type": "fab",
+		"url": "https: www.facebook.com/infolofisec"
+	},
+	{
+		"name": "Twitter",
+		"code": "twitter",
+		"type": "fab",
+		"url": "https: www.twitter.com/infolofisec"
+	},
+	{
+		"name": "Linkedin",
+		"code": "linkedin-in",
+		"type": "fab",
+		"url": "https: www.linkedin.com/infolofisec"
+	}
+]
