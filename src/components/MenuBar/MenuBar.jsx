@@ -1,14 +1,12 @@
 import React from "react";
 import "./MenuBar.scss";
 
-const Menubar = () => {
+const MenuBar = () => {
 	return (
-		<div className='hamburger'>
-			<span />
-			<span />
-			<span />
-		</div>
+		<button className='navbar-toggler' type='button'>
+			<span className='navbar-toggler-icon' />
+		</button>
 	);
 };
 
-export default Menubar;
+export default MenuBar;

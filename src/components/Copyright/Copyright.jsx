@@ -3,9 +3,11 @@ import "./Copyright.scss";
 
 const Copyright = () => {
 	return (
-		<small className='copyright'>
-			Copyright &copy; {new Date().getFullYear()} INFOLOGISEC. All Rights Reserved.
-		</small>
+		<ul>
+			<small className='copyright'>
+				Copyright &copy; {new Date().getFullYear()} INFOLOGISEC. All Rights Reserved.
+			</small>
+		</ul>
 	);
 };
 

@@ -7,8 +7,12 @@ footer.main-footer {
 	top: 100%;
 	left: 0;
 	background-color: $bg-accent-color;
-	padding: 1em 0.25em 0.5em;
+	padding: 1px 0.25em;
 	color: rgba(#ffffff, $navbar-link-opacity);
+
+	hr {
+		margin: 0.65em 0;
+	}
 
 	// TODO: make a responsive bottom footer component
 	section.bottom-footer {

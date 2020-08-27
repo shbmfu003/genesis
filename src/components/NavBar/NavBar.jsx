@@ -1,34 +1,40 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import BrandLogo from "../BrandLogo";
+import MenuBar from "../MenuBar";
 import "./NavBar.scss";
 
 const Navbar = () => {
 	return (
-		<nav role='navigation' className='navbar header-bottom'>
-			<BrandLogo />
-			<ul className='navbar-collapse'>
-				<li>
-					<Link to='/' className='nav-link inactive'>
-						Home
-					</Link>
-				</li>
-				<li>
-					<Link to='/about' className='nav-link inactive'>
-						About
-					</Link>
-				</li>
-				<li>
-					<Link to='/services' className='nav-link inactive'>
-						Services
-					</Link>
-				</li>
-				<li>
-					<Link to='/contact' className='nav-link inactive'>
-						Contact
-					</Link>
-				</li>
-			</ul>
+		<nav className='navbar navbar-expand-lg navbar-light bg-light'>
+			<div className='container'>
+				<BrandLogo />
+				<MenuBar />
+				<div className='collapse navbar-collapse'>
+					<ul className='navbar-nav mb-2 mb-lg-0'>
+						<li className='nav-item'>
+							<Link className='nav-link' href='/home'>
+								Home
+							</Link>
+						</li>
+						<li className='nav-item'>
+							<Link className='nav-link' href='/home'>
+								About
+							</Link>
+						</li>
+						<li className='nav-item'>
+							<Link className='nav-link' href='/home'>
+								Services
+							</Link>
+						</li>
+						<li className='nav-item'>
+							<Link className='nav-link' href='/home'>
+								Contact
+							</Link>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 	);
 };

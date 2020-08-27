@@ -9,11 +9,13 @@ import FinePrint from "../FinePrint";
 const Footer = () => {
 	return (
 		<footer role='contentinfo' className='main-footer sticky-bottom'>
+			<hr />
 			<section className='bottom-footer'>
 				<Copyright />
 				<FinePrint />
 				<SocialMediaIcons />
 			</section>
+			<hr />
 		</footer>
 	);
 };
