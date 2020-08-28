@@ -53,9 +53,11 @@
 	}
 }
 
-@mixin nav-item-hover($nav-palette) {
-	@each $color, $i in list {
-		&:nth-child($i) {
+@mixin nav-item-hover($nav-border-colors) {
+	$i: 0;
+	@each $color in $nav-border-colors {
+		$i: $i + 1;
+		&:nth-child(#{$i}) {
 			@include a-hover-after($color);
 		}
 	}
