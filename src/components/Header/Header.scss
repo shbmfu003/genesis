@@ -1,4 +1,21 @@
+@import "../../scss/colors";
+
 header {
 	z-index: 999;
 	box-shadow: 0 0 10px -6px #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transition: 600ms ease-out;
+
+	&.light-theme {
+		background-color: transparent;
+		color: #000000;
+	}
+
+	&.dark-theme {
+		background-color: $bg-accent-color;
+		color: #ffffff;
+	}
 }

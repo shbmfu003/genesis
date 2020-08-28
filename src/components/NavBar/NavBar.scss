@@ -1,17 +1,16 @@
-@import "../../scss/style";
+@import "../../scss/colors";
 @import "../../scss/variables";
 @import "../../scss/mixins";
+@import "../../scss/style";
 
 .navbar {
 	z-index: inherit;
 	display: flex;
-	justify-content: space-around;
 	align-items: center;
+	justify-content: space-around;
 	min-height: $navbar-min-height;
-
-	&.scroll {
-		background-color: $bg-accent-color;
-	}
+	background-color: inherit;
+	color: inherit;
 
 	&-collapse {
 		justify-content: flex-end;
@@ -24,46 +23,30 @@
 			margin-right: $nav-li-margin-right;
 			text-align: center;
 			border: $nav-li-border;
-
 			border-radius: $border-radius;
 
 			> a {
-				position: relative;
-				border-radius: 2px;
-				font-size: 1em;
 				font-weight: $nav-link-font-weight;
+				position: relative;
 				display: flex;
-				justify-content: center;
 				align-items: center;
-				height: $navbar-link-height;
+				justify-content: center;
 				width: $navbar-link-width;
-				text-transform: uppercase;
+				height: $navbar-link-height;
+				white-space: nowrap;
 				text-decoration: none;
 				letter-spacing: $letter-spacing;
+				text-transform: uppercase;
 				opacity: $navbar-link-opacity;
-				white-space: nowrap;
-				cursor: pointer;
+				color: inherit;
+				border-radius: 2px;
 
 				&:hover {
-					color: rgba(#000, 0.85);
+					opacity: 1;
 				}
 			}
 
-			&:first-child {
-				@include a-hover-after($nav-1st-li-bd-color, 1px);
-			}
-
-			&:nth-child(2) {
-				@include a-hover-after($nav-2nd-li-bd-color, 1px);
-			}
-
-			&:nth-child(3) {
-				@include a-hover-after($nav-3rd-li-bd-color, 1px);
-			}
-
-			&:nth-child(4) {
-				@include a-hover-after($nav-4th-li-bd-color, 1px);
-			}
+			@include nav-item-hover($nav-border-colors);
 		}
 	}
 }

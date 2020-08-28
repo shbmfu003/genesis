@@ -1,20 +1,26 @@
+@use 'keyframes';
+
+/**********************************************************
+******************* NAV HOVER ANIMATION *******************
+**********************************************************/
+
 @mixin a-hover-after($color, $outline-size: 1px) {
 	a {
 		transition: 850ms;
-	}
 
-	a:hover {
-		outline: $outline-size solid $color;
-		opacity: calc(#{$navbar-link-opacity} * #{$hover-opacity-factor});
-	}
+		&:hover {
+			outline: $outline-size solid $color;
+			opacity: calc(#{$navbar-link-opacity} * #{$hover-opacity-factor});
+		}
 
-	a::after {
-		content: "";
-		position: absolute;
-		height: $nav-li-after-height;
-		top: calc(100% - #{$nav-li-after-height});
-		background-color: $color;
-		animation: fade-out 650ms ease-in forwards;
+		&::after {
+			content: "";
+			position: absolute;
+			height: $nav-li-after-height;
+			top: calc(100% - #{$nav-li-after-height});
+			background-color: $color;
+			animation: fade-out 650ms ease-in forwards;
+		}
 	}
 
 	a:hover::after {
@@ -43,6 +49,40 @@
 		100% {
 			opacity: 0;
 			width: 0%;
+		}
+	}
+}
+
+@mixin nav-item-hover($nav-palette) {
+	@each $color, $i in list {
+		&:nth-child($i) {
+			@include a-hover-after($color);
+		}
+	}
+}
+
+/**********************************************************
+**************** SOCIAL BRANDS ICON MIXINS ****************
+**********************************************************/
+@mixin social-brand-hover($brand) {
+	@each $name, $color, $icon in $brand {
+		&.social-#{$name}:hover {
+			&::after {
+				bottom: 0;
+				background-color: $color;
+			}
+
+			i {
+				color: white;
+			}
+		}
+	}
+}
+
+@mixin social-icon($brand) {
+	@each $name, $color, $icon in $brand {
+		&.fa-#{$icon} {
+			color: $color;
 		}
 	}
 }
