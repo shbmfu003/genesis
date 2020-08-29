@@ -5,7 +5,8 @@ import "./App.scss";
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-//
+// app pages
+import HomePage from "./pages/Home";
 
 function App() {
 	return (
@@ -13,7 +14,7 @@ function App() {
 			<Header>
 				<NavBar />
 			</Header>
-
+			<HomePage />
 			<Footer />
 		</Router>
 	);
