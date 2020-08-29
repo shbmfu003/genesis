@@ -2,6 +2,12 @@
 @import "./scss/style";
 @import "./scss/variables";
 
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 html {
 	box-sizing: border-box;
 	height: 100%;
@@ -10,16 +16,28 @@ html {
 body {
 	box-sizing: inherit;
 	height: 100%;
-}
+	background-color: #ede9dd;
 
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+	&::-webkit-scrollbar {
+		width: 0.8rem;
+	}
+
+	&::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 6px rgba(#000, 0.3);
+		-webkit-box-shadow: inset 0 0 6px rgba(#000, 0.3);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: lighten(#3f2809, 15%);
+		outline: 1px solid slategrey;
+		border-radius: 8px;
+	}
 }
 
 #root {
-	min-height: 100vh;
+	position: relative;
+	height: 100%;
+	padding-top: 5rem;
 }
 
 ul {

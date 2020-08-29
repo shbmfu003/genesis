@@ -7,7 +7,7 @@ import "./NavBar.scss";
 const Navbar = () => {
 	return (
 		<nav className='navbar navbar-expand-lg'>
-			<div className='container'>
+			<div className='container-fluid'>
 				<BrandLogo />
 				<MenuBar />
 				<div className='collapse navbar-collapse'>

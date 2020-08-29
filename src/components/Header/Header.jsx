@@ -17,7 +17,7 @@ const Header = (props) => {
 	const { children } = props;
 
 	return (
-		<header role='banner' className={`${onTop ? "light" : "dark"}-theme`}>
+		<header role='banner' className={`${onTop ? "light" : "dark"}-theme fixed`}>
 			{children}
 		</header>
 	);
