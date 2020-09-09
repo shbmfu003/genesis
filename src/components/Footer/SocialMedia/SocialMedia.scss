@@ -1,7 +1,7 @@
-@import "../../scss/colors";
-@import "../../scss/variables";
-@import "../../scss/mixins";
-@import "../../scss/style";
+@import "../../../scss/variables";
+@import "../../../scss/colors";
+@import "../../../scss/mixins";
+@import "../../../scss/style";
 
 ul.social-icon-wrapper {
 	display: flex;
@@ -12,6 +12,7 @@ ul.social-icon-wrapper {
 		border: $nav-li-border;
 		margin-right: $nav-li-margin-right;
 		border-radius: $border-radius;
+		// box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.4), -1px -1px 6px -3px rgba(255, 255, 255, 0.3);
 
 		a {
 			width: 60px;
@@ -20,6 +21,11 @@ ul.social-icon-wrapper {
 			justify-content: center;
 			align-items: center;
 			text-decoration: none;
+
+			&:hover {
+				border: 1px solid rgba(#fff, 0.15);
+				border-radius: $border-radius;
+			}
 
 			&:after {
 				content: "";

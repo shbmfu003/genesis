@@ -1,0 +1,39 @@
+@import "../../../scss/variables";
+
+.newsletter {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	align-items: center;
+	font-size: 0.93em;
+
+	&-email {
+		flex: 7;
+		display: inline;
+		padding: 0.42em 0.35em 0.42em 0.65em;
+		border: 2px solid transparent;
+		border-bottom-left-radius: $border-radius;
+		border-top-left-radius: $border-radius;
+		text-shadow: 0 0 1px #000000;
+
+		&:focus,
+		&:active {
+			color: #314261;
+			outline: none;
+			border-color: #af6f19;
+		}
+	}
+	&-submit {
+		flex: 3;
+		border: 2px solid transparent;
+		border-top-right-radius: $border-radius;
+		border-bottom-right-radius: $border-radius;
+		outline: none;
+		padding: 0.42em 0.35em;
+		background-color: #af6f19;
+		font-weight: 500;
+		text-shadow: 0 0 0 #000000;
+		color: rgba(#000000, 0.1);
+		white-space: nowrap;
+	}
+}
