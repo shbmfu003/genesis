@@ -1,24 +1,13 @@
 @import "../../scss/colors";
 
-header {
+header.main-header {
 	z-index: 999;
 	box-shadow: 0 0 10px -6px #000;
 	width: 100%;
-	transition: 550ms ease-out; /*FIXME: Fix the transition between header and navbar*/
-
-	&.fixed {
-		position: fixed;
-		top: 0;
-		left: 0;
-	}
-
-	&.light-theme {
-		background-color: transparent;
-		color: #000000;
-	}
-
-	&.dark-theme {
-		background-color: $bg-accent-color;
-		color: #ffffff;
-	}
+	transition: 450ms ease-out; /*FIXME: Fix the transition between header and navbar*/
+	background-color: $bg-accent-color;
+	color: #ffffff;
+	position: sticky;
+	top: 0;
+	left: 0;
 }

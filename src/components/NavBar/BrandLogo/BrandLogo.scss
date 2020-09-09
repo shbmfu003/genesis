@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+@import "../../../scss/colors";
+// FIXME: Find colors that will contrast nicely with white on the light theme.
+
+a.navbar-brand {
+	font-family: "Fredericka the Great", cursive;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	text-decoration: unset;
+	letter-spacing: 1px;
+
+	&.small {
+		padding: 0;
+		margin: 0;
+		font-size: 0.78em;
+
+		h1 {
+			margin: 0 auto;
+		}
+	}
+
+	h1 {
+		margin: 0 auto;
+	}
+
+	span {
+		margin-right: 2px;
+
+		&:first-child {
+			color: $nav-1st-li-bd-color;
+		}
+		&:nth-child(2) {
+			color: $nav-2nd-li-bd-color;
+		}
+		&:last-child {
+			color: $nav-3rd-li-bd-color;
+			margin-right: 0;
+		}
+	}
+}
