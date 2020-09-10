@@ -11,13 +11,13 @@ import SocialMedia from "./SocialMedia";
 const Footer = () => {
 	return (
 		<footer role='contentinfo' className='main-footer footer'>
-			<section className='footer-top container row'>
+			<section className='footer-top container-lg row'>
 				<Newsletter classList='col-sm-12 col-md-4 text-muted' />
 				<SocialMedia classList='col-sm-12 col-md-4 text-muted' />
 				<ContactDetails classList='col-sm-12 col-md-4 text-muted' />
 			</section>
 			<hr />
-			<section className='footer-bottom container row'>
+			<section className='footer-bottom container-lg row'>
 				<Copyright classList='col-sm-12 col-md-4 text-muted' />
 				<article className='footer-logo col-sm-12 col-md-4'>
 					<BrandLogo classList='navbar-brand small' />
