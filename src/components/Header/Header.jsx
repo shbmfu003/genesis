@@ -1,23 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import "./Header.scss";
 
 const Header = (props) => {
-	const [onTop, setOnTop] = useState(true);
-
-	useEffect(() => {
-		window.addEventListener("scroll", () => {
-			const scrollCheck = window.scrollY < 1;
-			if (scrollCheck !== onTop) {
-				setOnTop(scrollCheck);
-			}
-		});
-	});
-
-	const { children } = props;
+	const { classList, children } = props;
 
 	return (
-		<header role='banner' className={`${onTop ? "light" : "dark"}-theme main-header`}>
+		<header role='banner' className={`${classList}`}>
 			{children}
 		</header>
 	);
@@ -26,5 +15,6 @@ const Header = (props) => {
 export default Header;
 
 Header.propTypes = {
+	classList: PropTypes.node.isRequired,
 	children: PropTypes.node.isRequired,
 };
