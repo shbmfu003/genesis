@@ -37,7 +37,16 @@ body {
 #root {
 	position: relative;
 	height: 100%;
-	padding-top: 5rem;
+	display: flex;
+	flex-direction: column;
+
+	.content {
+		flex: 1;
+	}
+}
+
+h1 {
+	text-align: center;
 }
 
 ul {

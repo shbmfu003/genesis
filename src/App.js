@@ -1,21 +1,21 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch } from "react-router-dom";
 import "./App.scss";
-// app components
-import Header from "./components/Header";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
-// app pages
-import HomePage from "./pages/Home";
+import { MainLayoutRoute, HeroLayoutRoute } from "./routes";
+import HomeView from "./views/home";
+import ContactView from "./views/contact";
+import AboutView from "./views/about";
+import FeaturesView from "./views/features";
 
 function App() {
 	return (
 		<Router>
-			<Header>
-				<NavBar />
-			</Header>
-			<HomePage />
-			<Footer />
+			<Switch>
+				<HeroLayoutRoute exact path='/' component={HomeView} />
+				<MainLayoutRoute exact path='/about' component={AboutView} />
+				<MainLayoutRoute exact path='/contact' component={ContactView} />
+				<MainLayoutRoute exact path='/features' component={FeaturesView} />
+			</Switch>
 		</Router>
 	);
 }
