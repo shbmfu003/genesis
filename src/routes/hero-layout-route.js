@@ -20,5 +20,5 @@ const HeroLayoutRoute = ({ component: Component, ...rest }) => {
 export default HeroLayoutRoute;
 
 HeroLayoutRoute.propTypes = {
-	component: PropTypes.node.isRequired,
+	component: PropTypes.func.isRequired,
 };

@@ -28,7 +28,7 @@ const Sitemap = (props) => {
 		<ul className={`footer-sitemap ${classList}`}>
 			{FooterLinks.map((link) => {
 				return (
-					<li>
+					<li key={link.url}>
 						<Link to={link.url}>{link.name}</Link>
 					</li>
 				);
@@ -40,5 +40,9 @@ const Sitemap = (props) => {
 export default Sitemap;
 
 Sitemap.propTypes = {
-	classList: PropTypes.node.isRequired,
+	classList: PropTypes.string,
+};
+
+Sitemap.defaultProps = {
+	classList: "",
 };

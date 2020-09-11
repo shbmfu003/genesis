@@ -20,5 +20,5 @@ const MainLayoutRoute = ({ component: Component, ...rest }) => {
 export default MainLayoutRoute;
 
 MainLayoutRoute.propTypes = {
-	component: PropTypes.node.isRequired,
+	component: PropTypes.func.isRequired,
 };

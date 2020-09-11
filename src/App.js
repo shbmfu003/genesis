@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Switch } from "react-router-dom";
 import "./App.scss";
 import { MainLayoutRoute, HeroLayoutRoute } from "./routes";
 import HomeView from "./views/home";
-import ContactView from "./views/contact";
 import AboutView from "./views/about";
+import ContactView from "./views/contact";
 import FeaturesView from "./views/features";
 
 function App() {

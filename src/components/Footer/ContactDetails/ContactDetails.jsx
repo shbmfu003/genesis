@@ -28,7 +28,7 @@ const ContactDetails = (props) => {
 	const { classList } = props;
 	const FooterContact = ContactList.map((contact) => {
 		return (
-			<li>
+			<li key={contact.title}>
 				<i className={`fa fa-${contact.code}`} />
 				<Link to={{ pathname: `${contact.type}:${contact.detail}` }}>{contact.title}</Link>
 			</li>

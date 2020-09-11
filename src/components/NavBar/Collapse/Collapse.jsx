@@ -23,7 +23,7 @@ const NavItems = [
 const Collapse = () => {
 	const collapseItems = NavItems.map((item) => {
 		return (
-			<li className='nav-item'>
+			<li key={item.name} className='nav-item'>
 				<Link className='nav-link' to={item.url}>
 					{item.name}
 				</Link>
