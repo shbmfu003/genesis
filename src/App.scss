@@ -16,7 +16,7 @@ html {
 body {
 	box-sizing: inherit;
 	height: 100%;
-	background-color: #fffafa;
+	background-color: #e6e6fa;
 
 	&::-webkit-scrollbar {
 		width: 0.8rem;
@@ -29,7 +29,6 @@ body {
 
 	&::-webkit-scrollbar-thumb {
 		background-color: lighten(#3f2809, 15%);
-		outline: 1px solid slategrey;
 		border-radius: 8px;
 	}
 }

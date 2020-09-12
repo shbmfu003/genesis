@@ -1,5 +1,6 @@
 import React from "react";
 import "./contact.view.scss";
+import ContactImage from "../../images/opened.svg";
 
 const ContactDetails = [
 	{
@@ -42,12 +43,12 @@ const ContactView = () => {
 	return (
 		<section className='contact contact-view container'>
 			<div className='row equal gx-0'>
-				<h1>Get in touch</h1>
-				<section className='contact-map col'>
-					<h1>Map Here</h1>
-				</section>
+				<h1>Get in touch with us.</h1>
+				<article className='contact-image col-md-6 col-sm-12'>
+					<img src={ContactImage} alt='...' />
+				</article>
 
-				<section className='contact-form col'>
+				<article className='contact-form col-md-6 col-sm-12'>
 					<form className='form-wrapper row'>
 						<div className='col'>{contactFormInput}</div>
 						<div className='col pb-3'>
@@ -59,7 +60,7 @@ const ContactView = () => {
 							</button>
 						</div>
 					</form>
-				</section>
+				</article>
 			</div>
 		</section>
 	);
