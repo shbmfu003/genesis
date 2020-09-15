@@ -1,0 +1,9 @@
+.form-control {
+	margin: 0;
+	border: 1px solid #0c5460;
+
+	&:focus,
+	&:active {
+		box-shadow: 0 0 8px -3px #0c5460;
+	}
+}

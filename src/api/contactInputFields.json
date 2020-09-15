@@ -1,0 +1,22 @@
+[
+	{
+		"id": "name",
+		"type": "text",
+		"placeholder": "Name"
+	},
+	{
+		"id": "phone",
+		"type": "text",
+		"placeholder": "Phone number"
+	},
+	{
+		"id": "email",
+		"type": "email",
+		"placeholder": "Email address"
+	},
+	{
+		"id": "subject",
+		"type": "text",
+		"placeholder": "Subject"
+	}
+]
