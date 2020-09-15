@@ -6,9 +6,12 @@ import "./Newsletter.scss";
 const Newsletter = (props) => {
 	const { classList } = props;
 	return (
-		<article className={`form-newsletter ${classList}`}>
-			<h4>Join the newsletter</h4>
-			<form className='newsletter container'>
+		<article className={`newsletter ${classList}`}>
+			<h4>
+				<span>Join the newsletter</span>
+			</h4>
+			<p>Keep up to date with our latest news and services offers.</p>
+			<form className='newsletter-form container'>
 				<input type='email' className='newsletter-email' placeholder='Enter your email' />
 				<button type='submit' className='newsletter-submit'>
 					Sign up

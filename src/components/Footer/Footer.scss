@@ -3,23 +3,22 @@
 @import "../../scss/colors";
 @import "../../scss/mixins";
 
+$pseudo-border: solid 2px $color-slate-gray;
+
 footer.main-footer {
 	padding-top: 0.1em;
 	color: rgba(#fff, $navbar-link-opacity);
 	background-color: $bg-accent-color;
 
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		text-align: center;
+	h4 {
+		position: relative;
 		margin-bottom: 0.85em;
+		letter-spacing: 1px;
+		text-align: center;
 	}
 
 	hr {
-		margin: 5px 0;
+		margin: 5px 0.65em;
 	}
 
 	section.footer-top {

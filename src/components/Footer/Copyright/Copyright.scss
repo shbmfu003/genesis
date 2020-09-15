@@ -1,8 +1,6 @@
 .footer-copyright {
 	display: flex;
+	justify-content: center;
 	align-items: center;
 
-	@media only screen and (min-width: 576px) and (max-width: 768px) {
-		justify-content: center;
-	}
 }
