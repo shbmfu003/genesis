@@ -1,0 +1,51 @@
+@import "../../scss/variables";
+@import "../../scss/colors";
+@import "../../scss/mixins";
+@import "../../scss/style";
+
+ul.social-icon-wrapper {
+	display: flex;
+	justify-content: center;
+
+	li {
+		position: relative;
+		margin-right: $nav-li-margin-right;
+		border-radius: $border-radius;
+		background-clip: padding-box;
+		border: 1px solid #818182;
+		padding: 0.02em 0.01em;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		a {
+			width: 60px;
+			height: calc(#{$navbar-link-height} * #{$footer-anchor-height-factor});
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				transition: all $social-transition-duration ease-out;
+				border-radius: $border-radius;
+			}
+
+			@include social-brand-hover($brand);
+
+			i {
+				font-size: 1.75em;
+				transition: all $social-transition-duration ease-out;
+				z-index: 1;
+
+				@include social-icon($brand);
+			}
+		}
+	}
+}
