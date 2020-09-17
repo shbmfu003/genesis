@@ -1,0 +1,21 @@
+.footer-links {
+	flex: 1;
+	height: 100%;
+
+	ul {
+		margin-left: 25%;
+		padding: 0 5px;
+	}
+
+	li {
+		margin-bottom: 0.2em;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	a {
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,36 @@
+[
+	{
+		"title": "Quick links",
+		"links": [
+			{
+				"name": "Our Story",
+				"url": "/ourstory"
+			},
+			{
+				"name": "Our People",
+				"url": "/ourpeople"
+			},
+			{
+				"name": "Our Products",
+				"url": "/ourproducts"
+			}
+		]
+	},
+	{
+		"title": "Other links",
+		"links": [
+			{
+				"name": "Privacy Policy",
+				"url": "/privacy"
+			},
+			{
+				"name": "Terms & Condition",
+				"url": "/terms"
+			},
+			{
+				"name": "Careers",
+				"url": "/careers"
+			}
+		]
+	}
+]
