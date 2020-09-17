@@ -1,0 +1,28 @@
+@import "../../scss/colors";
+
+.contact-info {
+	margin-bottom: 2em;
+
+	ul {
+		margin-left: 25%;
+
+		li {
+			color: rgba(#000000, 0.65);
+			margin-bottom: 0.75em;
+
+			i {
+				width: 16px;
+				margin-right: 0.67em;
+			}
+
+			a:hover {
+				color: #af6f19;
+
+				> span {
+					color: rgba(#000000, 0.85);
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+[
+	{
+		"id": "Phone Number",
+		"type": "tel",
+		"detail": "060-484-3666",
+		"icon": "phone-alt"
+	},
+	{
+		"id": "Email Address",
+		"type": "mailto",
+		"detail": "info@infologisec.com",
+		"icon": "envelope"
+	},
+	{
+		"id": "Office Location",
+		"type": "map",
+		"detail": "www.maps.com",
+		"icon": "map-marker-alt"
+	}
+]

@@ -1,13 +1,28 @@
 @import "../../scss/variables";
 
-.form-control {
-	margin: 0;
-	border-radius: $border-radius;
-	border-color: rgba(#0c5460, 0.25);
+.contact-form {
+	.form-wrapper {
+		margin: 0;
+	}
 
-	&:focus,
-	&:active {
-		box-shadow: 0 0 0 0.1rem rgba(#0c5460, 0.5);
-		border: none;
+	.form-control {
+		margin: 0;
+		border-radius: $border-radius;
+		border-color: rgba(#0c5460, 0.25);
+
+		&:focus,
+		&:active {
+			box-shadow: 0 0 0 0.1rem rgba(#0c5460, 0.5);
+			border: none;
+		}
+	}
+
+	textarea {
+		height: 100%;
+	}
+
+	button {
+		width: 100%;
+		background-color: #af6f19;
 	}
 }
