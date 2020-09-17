@@ -7,13 +7,13 @@ $pseudo-border: solid 2px $color-slate-gray;
 
 footer.main-footer {
 	padding-top: 0.1em;
-	color: rgba(#fff, $navbar-link-opacity);
+	color: $text-color;
 	background-color: $bg-accent-color;
 
 	h4 {
 		position: relative;
-		margin-bottom: 0.85em;
 		letter-spacing: 1px;
+		margin-bottom: 0.85em;
 		text-align: center;
 	}
 
@@ -27,11 +27,5 @@ footer.main-footer {
 
 	section.footer-bottom {
 		margin: 0 auto;
-	}
-
-	.footer-logo {
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 }
